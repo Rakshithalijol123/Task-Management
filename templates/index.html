@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold text-center mb-6">Task Management</h1>
+
+        <!-- Task Form -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">Add/Edit Task</h2>
+            <form id="taskForm">
+                <div class="mb-4">
+                    <label for="taskName" class="block text-sm font-medium text-gray-700">Task Name</label>
+                    <input type="text" id="taskName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="taskDescription" class="block text-sm font-medium text-gray-700">Task Description</label>
+                    <textarea id="taskDescription" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-500" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-semibold p-2 rounded-md hover:bg-blue-700">Submit</button>
+            </form>
+        </div>
+
+        <!-- Task List -->
+        <div id="taskList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Task cards will be dynamically injected here -->
+        </div>
+    </div>
+</body>
+</html>

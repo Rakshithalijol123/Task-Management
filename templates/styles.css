@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.completed {
+    color: red;
+}
+.pending {
+    color: green;
+}
