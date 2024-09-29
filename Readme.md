@@ -13,8 +13,8 @@ The Task Management Application is a web-based tool that allows users to create,
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/task-management.git
-   cd task-management
+   git clone https://github.com/Rakshithalijol123/Task-Management.git
+   cd Task-Management
 
 **Create a Virtual Environment**
 python -m venv venv
